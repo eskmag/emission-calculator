@@ -1,7 +1,3 @@
-Selvfølgelig! Her er en **ferdig `README.md` på engelsk** – bare kopier og lim inn:
-
----
-
 ```markdown
 # Emission Calculator
 
