@@ -1,8 +1,4 @@
-Selvfølgelig! Her er en **ferdig `README.md` på engelsk** – bare kopier og lim inn:
 
----
-
-```markdown
 # Emission Calculator
 
 **Emission Calculator** is a simple and extensible Python-based tool for estimating individual CO₂ emissions based on lifestyle and daily habits such as transport, diet, and energy consumption.
@@ -98,4 +94,3 @@ This project is licensed under the MIT License.
 
 Eskil – Informatics student @ University of Bergen (UiB)
 
-```
