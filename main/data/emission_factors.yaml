@@ -1,0 +1,29 @@
+transport:
+    car:
+        gasoline: 2.31  # kg CO2 per liter
+        diesel: 2.68    # kg CO2 per liter
+    bus:
+        diesel: 2.68    # kg CO2 per liter
+        biofuel: 0.00   # kg CO2 per liter
+        electric: 0.05  # kg CO2 per kWh
+    train:
+        electric: 0.01  # kg CO2 per kWh per person
+        diesel: 0.06    # kg CO2 per liter per person
+    flight:
+        short: 300     # < 3 hours - kg CO2 per passenger-trip
+        medium: 800    # 3-6 hours
+        long: 1600      # > 6 hours
+
+
+diet:
+    high_meat: 7.2      # kg CO2e per day
+    average: 5.6
+    vegetarian: 3.8
+    vegan: 2.9
+
+
+energy:
+    electricity: 0.02   # kg CO2 per kWh - European average
+    oil: 0.267
+    gas: 0.25
+    wood: 0.018
