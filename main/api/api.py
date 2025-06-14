@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from main.core.transport import transport_emissions
 from main.core.food import food_emissions
 from main.core.energy import energy_emissions
-from main.models.profile import EmissionProfile, EmissionRequest, EmissionResponse
+from main.models.api_models import EmissionRequest, EmissionResponse
 
 router = APIRouter()
 

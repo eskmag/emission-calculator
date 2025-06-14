@@ -1,0 +1,108 @@
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 1.6;
+    background: #006241;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: beige;
+}
+
+header h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+nav#main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+nav#main-nav li {
+    margin: 0 1rem;
+}
+
+nav#main-nav a {
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+}
+
+nav#main-nav a:hover {
+    text-decoration: underline;
+    color: #fce898;
+    text-underline-offset: 0.2rem;
+}
+
+form {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, select {
+    padding: 0.4rem;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 0.2rem;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#result {
+    background-color: #eef8ee;
+    border-left: 5px solid #4CAF50;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+#result h2 {
+    margin-top: 0;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+}
