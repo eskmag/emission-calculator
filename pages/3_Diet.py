@@ -20,3 +20,33 @@ st.markdown("""
 """)
 
 st.divider()
+
+diet_type = st.selectbox(
+    "Select your diet type:",
+    options=[
+        ("high_meat", "High Meat"), 
+        ("average", "Average"), 
+        ("vegetarian", "Vegetarian"), 
+        ("vegan", "Vegan")
+    ],
+    format_func=lambda x: x[1] # Display the second element of the tuple
+)
+
+selected_key = diet_type[0]
+
+if st.button("Calculate Food Emissions"):
+    food_emissions_result = food_emissions(diet_type=selected_key)
+    
+    st.subheader("Total Food Emissions")
+    st.write(f"Your total food emissions are: **{food_emissions_result:.2f} kg CO2**")
+    
+    st.markdown("""
+        ### Tips to Reduce Food Emissions:
+        - Reduce meat and dairy consumption.
+        - Choose local and seasonal produce.
+        - Minimize food waste.
+        - Opt for plant-based alternatives.
+    """)    
+
+    st.session_state["food_emissions"] = food_emissions_result
+

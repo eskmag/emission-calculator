@@ -23,7 +23,7 @@ diet:
 
 
 energy:
-    electricity: 0.02   # kg CO2 per kWh - European average
-    oil: 0.267
-    gas: 0.25
-    wood: 0.018
+    kwh_electricity: 0.02   # kg CO2 per kWh - European average
+    kwh_oil: 0.267
+    kwh_gas: 0.25
+    kwh_wood: 0.018

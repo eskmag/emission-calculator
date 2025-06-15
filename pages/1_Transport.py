@@ -60,3 +60,5 @@ if st.button("Calculate Transport Emissions"):
 
     st.subheader("Total Transport Emissions")
     st.write(f"Your total transport emissions are: **{total:.2f} kg CO2**")
+
+    st.session_state["transport_emissions"] = total_transport_emissions
