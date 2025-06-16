@@ -1,29 +1,27 @@
 transport:
-    car:
-        gasoline: 2.31  # kg CO2 per liter
-        diesel: 2.68    # kg CO2 per liter
-    bus:
-        diesel: 2.68    # kg CO2 per liter
-        biofuel: 0.00   # kg CO2 per liter
-        electric: 0.05  # kg CO2 per kWh
-    train:
-        electric: 0.01  # kg CO2 per kWh per person
-        diesel: 0.06    # kg CO2 per liter per person
-    flight:
-        short: 300     # < 3 hours - kg CO2 per passenger-trip
-        medium: 800    # 3-6 hours
-        long: 1600      # > 6 hours
-
+  car:
+    petrol: 2.31  # kg CO2 per liter of petrol burned (typical value from fuel combustion; EIA standard)
+    diesel: 2.68  # kg CO2 per liter of diesel burned (higher due to carbon density)
+  bus:
+    diesel: 2.68    # Assumes standard diesel bus; same factor as diesel cars
+    biofuel: 0.00   # Assumed net-zero emissions for biofuel under ideal sustainable sourcing
+    electric: 0.05  # kg CO2 per kWh of electricity consumed by electric buses (based on EU avg grid)
+  train:
+    electric: 0.01  # kg CO2 per kWh per person for electric trains (efficient and green in most of EU)
+    diesel: 0.06    # kg CO2 per liter per person for diesel trains (efficient compared to cars)
+  flight:
+    short: 300     # kg CO2 per passenger-trip (< 3 hours). Includes radiative forcing index.
+    medium: 800    # kg CO2 per passenger-trip (3–6 hours)
+    long: 1600     # kg CO2 per passenger-trip (> 6 hours). Accounts for increased emissions at altitude.
 
 diet:
-    high_meat: 7.2      # kg CO2e per day
-    average: 5.6
-    vegetarian: 3.8
-    vegan: 2.9
-
+  high_meat: 7.2       # kg CO2e per person per day; heavy red meat consumption (e.g. beef, lamb)
+  average: 5.6         # Mixed diet with moderate meat/dairy
+  vegetarian: 3.8      # No meat, some dairy/eggs
+  vegan: 2.9           # No animal products
 
 energy:
-    kwh_electricity: 0.02   # kg CO2 per kWh - European average
-    kwh_oil: 0.267
-    kwh_gas: 0.25
-    kwh_wood: 0.018
+  kwh_electricity: 0.02   # kg CO2 per kWh - European average (hydro/nuclear/renewables mix)
+  kwh_oil: 0.267          # kg CO2 per kWh - heating oil or similar fuel
+  kwh_gas: 0.25           # kg CO2 per kWh - natural gas (methane) combustion
+  kwh_wood: 0.018         # kg CO2 per kWh - biomass wood fuel (assuming sustainable forestry)

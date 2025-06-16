@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("Food Emissions Calculator")
 st.markdown("""
     Welcome to the **Food Emissions Calculator!**
-    This tool helps you estimate your carbon footprint based on your diet, including meat, dairy, and plant-based foods.
+    This tool helps you estimate your **monthly carbon footprint** based on your diet, including meat, dairy, and plant-based foods.
     
     ### How to Use:
     1. **Select your diet type**: Choose from options like Vegan, Vegetarian, Omnivore, or Carnivore.

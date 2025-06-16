@@ -10,7 +10,7 @@ st.set_page_config(
 st.title("Energy Emissions Calculator")
 st.markdown("""
     Welcome to the **Energy Emissions Calculator!**
-    This tool helps you estimate your carbon footprint based on your energy consumption, including electricity, gas, and other sources.
+    This tool helps you estimate your **monthly carbon footprint** based on your energy consumption, including electricity, gas, and other sources.
             
     ### How to Use:
     1. **Select your household energy sources**: Choose from electricity, oil, gas, wood, or other sources.

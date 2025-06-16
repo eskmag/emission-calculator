@@ -11,3 +11,9 @@ with open(DATA_PATH, 'r') as file:
 TRANSPORT_FACTORS = emission_factors['transport']
 FOOD_FACTORS = emission_factors['diet']
 ENERGY_FACTORS = emission_factors['energy']
+
+CAR_FUEL_CONSUMPTION = {
+    'petrol': 0.2,  # L/km
+    'diesel': 0.15,  # L/km
+    'electric': 0.0   # kWh/km
+}

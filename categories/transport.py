@@ -10,7 +10,7 @@ st.set_page_config(
 st.title("Transport Emissions Calculator")
 st.markdown("""
     Welcome to the **Transport Emissions Calculator!**
-    This tool helps you estimate your carbon footprint based on your transportation choices, including car, bus, train, and air travel.
+    This tool helps you estimate your **monthly carbon footprint** based on your transportation choices, including car, bus, train, and air travel.
             
     ### How to Use:
     1. **Car Emissions**: Enter the kilometers traveled by car and select the fuel type (Petrol, Diesel, Electric).

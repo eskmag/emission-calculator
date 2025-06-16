@@ -10,7 +10,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("Carbon Emissions Calculator")
+st.title("🌍 Carbon Emissions Calculator")
 st.markdown("""
     Welcome to the ***Carbon Emissions Calculator!*** 
     This tool helps you estimate your carbon footprint based on your *transportation*, *energy usage*, and *food consumption*.
@@ -22,6 +22,8 @@ st.markdown("""
 st.divider()
 
 st.markdown("""
+    ###### Your carbon emissions are based on your monthly activities, including transportation, energy consumption, and food choices.  
+    
     ### How to Use:
     1. **Transport Emissions**: Enter your travel details for car, bus, train, and flights.
     2. **Energy Emissions**: Input your energy consumption data for electricity, gas, and other sources.
