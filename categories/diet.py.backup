@@ -15,8 +15,8 @@ st.markdown("""
     
     ### How to Use:
     1. **Select your diet type**: Choose from options like Vegan, Vegetarian, Omnivore, or Carnivore.
-    2. **Input your food consumption**: Enter the amount of meat, dairy, and plant-based foods consumed in kilograms per week.
-    3. **Calculate your emissions**: Click the "Calculate Food Emissions" button to see your total food emissions in kilograms of CO2.
+    2. **Review your diet**: The calculator estimates your monthly food emissions based on typical consumption patterns for your selected diet type.
+    3. **Calculate your emissions**: Click the "Calculate Food Emissions" button to see your total monthly food emissions in kilograms of CO2.
 """)
 
 st.divider()
@@ -37,8 +37,8 @@ selected_key = diet_type[0]
 if st.button("Calculate Food Emissions"):
     food_emissions_result = food_emissions(diet_type=selected_key)
     
-    st.subheader("Total Food Emissions")
-    st.write(f"Your total food emissions are: **{food_emissions_result:.2f} kg CO2**")
+    st.subheader("Total Monthly Food Emissions")
+    st.write(f"Your total monthly food emissions are: **{food_emissions_result:.2f} kg CO2**")
     
     st.markdown("""
         ### Tips to Reduce Food Emissions:

@@ -15,7 +15,7 @@ st.markdown("""
 
 st.page_link("categories/transport.py", label="### :green[Transport Emissions]", icon="🚗")
 st.page_link("categories/energy.py", label="### :green[Energy Emissions]", icon="⚡")
-st.page_link("categories/diet.py", label="### :green[Food Emissions]", icon="🥗")
+st.page_link("categories/enhanced_food.py", label="### :green[Food Emissions]", icon="🥗")
 
 st.divider()
 

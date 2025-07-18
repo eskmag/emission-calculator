@@ -12,14 +12,49 @@ The goal is to raise awareness and provide actionable insights into personal CO�
 
 ## 📦 Features
 
+### 🧮 Core Calculations
 - ✅ Interactive input for transport, energy, and food consumption
 - ✅ Instant calculation of CO₂ emissions using up-to-date emission factors
-- ✅ Session-based memory of values between sections
+- ✅ Input validation with helpful warnings for unrealistic values
 - ✅ Graphical breakdowns (bar chart and pie chart supported)
 - ✅ Tips for reducing emissions in each category
 
+### 🔐 User Management
+- ✅ Secure user authentication with password hashing
+- ✅ Personal profiles with customizable settings
+- ✅ Individual data tracking and privacy protection
+- ✅ Demo accounts for quick testing
+- ✅ Admin panel for user management
+
+### 📊 Analytics & Tracking
+- ✅ Goal setting and progress tracking
+- ✅ Historical data visualization
+- ✅ Personalized recommendations
+- ✅ Global emission comparisons
+- ✅ Export functionality for personal records
+
+### 🛡️ Security & Privacy
+- ✅ Password hashing with salt
+- ✅ Session-based authentication
+- ✅ Data isolation per user
+- ✅ Input validation and sanitization
+- ✅ Secure local storage
+
 ---
 
+## 🚀 Quick Start
+
+### Demo Account
+Want to try without creating an account? Use the "Create Demo Account" button for instant access with all features enabled.
+
+### Regular Account
+1. **Register**: Create an account with username and password
+2. **Login**: Access your personalized dashboard
+3. **Calculate**: Enter your monthly transport, energy, and food data
+4. **Track**: Set goals and monitor your progress over time
+5. **Improve**: Follow personalized recommendations to reduce emissions
+
+---
 
 ## 🧮 Emission Factors
 
@@ -41,7 +76,37 @@ Detailed documentation available in [`emission_sources.md`](./emission_sources.m
 ```bash
 pip install -r requirements.txt
 ```
+
 ### 2. Run the App
+
+```bash
+streamlit run streamlit_app.py
+```
+
+### 3. Access the Application
+
+- **Main App**: http://localhost:8501
+- **Admin Panel**: Navigate to Admin Panel in the app (login: admin/admin123)
+
+Make sure all pages and modules are placed in their respective folders as shown above.
+
+---
+
+## 🔐 Security
+
+This application includes a secure authentication system with:
+
+- **Password Hashing**: All passwords are securely hashed with salt
+- **Session Management**: Secure user sessions with proper isolation
+- **Input Validation**: All user inputs are validated and sanitized
+- **Data Privacy**: Users only have access to their own data
+- **Admin Tools**: User management and monitoring capabilities
+
+For detailed security information, see [SECURITY.md](./SECURITY.md).
+
+**⚠️ Important**: Change default admin credentials before production deployment!
+
+---
 
 ```bash
 streamlit run streamlit_app.py

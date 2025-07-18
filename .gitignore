@@ -6,6 +6,11 @@ __pycache__/
 .env
 *.sqlite3
 
+# Authentication and user data files
+users.json
+users.db
+*.log
+
 # C extensions
 *.so
 
